@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #FDFBF7;
+  --color-dustyRose: #DCAE96;
+  --color-sageGreen: #A3B18A;
+  --color-gold: #C5A059;
+  --color-darkText: #2D3748;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Lato", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-darkText);
+  }
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
